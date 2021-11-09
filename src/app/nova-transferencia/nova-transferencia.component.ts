@@ -11,7 +11,7 @@ export class NovaTransferenciaComponent {
 
   @Output() aoTransferir = new EventEmitter<any>()
 
-  transferir(): void {
+  transferirNovaTransferencia(): void {
     const valorEmitir = {valor: this.valor, destino: this.destino}
     this.aoTransferir.emit(valorEmitir)
 
